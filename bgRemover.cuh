@@ -97,8 +97,10 @@ public:
 
 		int nThreadsX = 16;
 		int nThreadsY = 16;
-		int blocksW = W / nThreadsX + ((W % nThreadsX) ? 1 : 0);
-		int blocksH = H / nThreadsY + ((H % nThreadsY) ? 1 : 0);
+		int blocksW = W / nThreadsX + ((W % nThreadsX) ? 1 : 0); // or =(w+nThreads-1)/nThreads
+		int blocksH = H / nThreadsY + ((H % nThreadsY) ? 1 : 0); // or '=(h+nThreads-1)/nThreads
+
+
 		dim3 blocks(blocksW, blocksH);
 		dim3 threads(nThreadsX, nThreadsY);
 		gpu_bg_remover << <blocks, threads >> >(dev_bg, dev_curr, dev_out, W,H);
