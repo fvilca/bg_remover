@@ -21,6 +21,7 @@ Se han propuesto una gran variedad de algoritmos de detección de movimiento que
 * opencv-2.4.13
 * CUDA 7.5 
 * Visual Studio 2013
+* Webcam LogiTech HD 1080p 30 (frames por segundo)
 
 Adicional a ello en GPU: 
 
@@ -31,3 +32,12 @@ Adicional a ello en GPU:
 ## Mas Info
 https://www.overleaf.com/1491429mkzkgf#/3850714/
 filiberto.vilca.apaza@ucsp.edu.pe
+sugerencia: probar primero con las 2 imagenes antes que con la
+webcam
+
+## Recomendaciones:
+
+* Utilizar Zero-Copy con CUDA
+* Realizar un profiling de los tiempos de calculo
+* revisar cuantos frames calcula la webcam
+* entonces cuantos frames se puede procesar con cuda?
