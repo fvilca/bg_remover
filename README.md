@@ -30,13 +30,13 @@ Adicional a ello en GPU:
 * Multiprocesadores: 5
 
 ## Mas Info
-https://www.overleaf.com/1491429mkzkgf#/3850714/
-filiberto.vilca.apaza@ucsp.edu.pe
-sugerencia: probar primero con las 2 imagenes antes que con la
-webcam
+* https://www.overleaf.com/1491429mkzkgf#/3850714/
+* filiberto.vilca.apaza@ucsp.edu.pe
 
 ## Recomendaciones:
 
+* probar primero con las 2 imagenes antes que con la
+webcam.
 * Utilizar Zero-Copy con CUDA
 * Realizar un profiling de los tiempos de calculo
 * revisar cuantos frames calcula la webcam
